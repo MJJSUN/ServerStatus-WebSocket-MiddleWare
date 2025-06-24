@@ -1,0 +1,2 @@
+# ServerStatus-WebSocket-MiddleWare
+一个Go编写的WebSocket to Tcp中间件，无需修改ServerStatus服务端即可支持客户端WebSocket连接
