@@ -60,6 +60,19 @@ go build -o middleware_linux_amd64
 ./middleware_linux_amd64 -ws-port=8080 -tcp-host=yourip -tcp-port=6666
 ```
 
+## 在docker中运行
+```
+git clone https://github.com/MJJSUN/ServerStatus-WebSocket-MiddleWare.git
+
+cd ServerStatus-WebSocket-MiddleWare
+
+docker build -t middleware-app .
+```
+
+```
+docker run -d --name serverstatus-middleware --restart always -e WS_PORT=8080 -e TCP_HOST="yourip" -e TCP_PORT=6666 -p 127.0.0.1:8080:8080 middleware-app:latest
+```
+
 ## Usage
 
 ```
@@ -83,8 +96,6 @@ Usage of ./middleware_linux_amd64:
 ```
 
 ## TODO
-
-容器化
 
 安装脚本
 
