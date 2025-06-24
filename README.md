@@ -95,6 +95,10 @@ Usage of ./middleware_linux_amd64:
     	WebSocket server port (default 8080)
 ```
 
+魔改版Websocket客户端请查看我的另一个项目
+
+https://github.com/MJJSUN/ServerStatus-goclient
+
 ## TODO
 
 安装脚本
