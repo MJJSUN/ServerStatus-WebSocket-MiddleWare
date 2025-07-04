@@ -51,7 +51,7 @@ cd ServerStatus-WebSocket-MiddleWare
 
 go get github.com/gorilla/websocket
 
-go build -o middleware_linux_amd64
+go build -trimpath -o middleware_linux_amd64
 ```
 
 ## 运行
